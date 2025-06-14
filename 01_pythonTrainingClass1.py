@@ -50,3 +50,31 @@ print(varName1, varName2)
 # Camel Case - myVariableName
 # Pascal Case - MyvariableName
 # Snake Case - my_variable_name
+
+# multiple variable assignment
+var1, var2, var3 = 'a', 'b', 3
+print(var1, var2, var3)
+
+# one value to multiple variables
+var1 = var2 = var3 = 'Orange'
+print(var1, var2, var3)
+print(var1)
+print(var2)
+print(var3)
+
+# unpack a collection
+fruits = ["apple", "banana", "cherry"]
+var1, var2, var3 = fruits
+print(var1, var2, var3)
+
+# adding a string
+var1 = "Python "
+var2 = "is "
+var3 = "awesome "
+print(var1 + var2 + var3)
+
+# addition
+var1 = 5
+# var2 = '10'
+var2 = int('10')
+print(var1 + var2)
