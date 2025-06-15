@@ -3,7 +3,7 @@ newVar1 = "Hello"
 print(newVar1)
 
 # python indentation
-if 5 > 2:
+if 5 > 3:
     print("Five is greater then 3")
     print("hello Aboli")
 
