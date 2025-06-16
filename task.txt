@@ -1,0 +1,2 @@
+1. How to generate random numbers between
+any two numbers? Eg: 1 to 100 random numbers, 5 number ya 6 number
