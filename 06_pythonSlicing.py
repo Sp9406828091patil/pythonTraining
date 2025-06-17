@@ -30,3 +30,13 @@ print(newString.replace('o', '*'))
 
 # split string
 print(newString.split(' '))
+
+# string concatenation
+print("a" + " " + "b")
+
+# adding string and number (F-string)
+age = 36
+print("My name is John, I am " + str(age))
+print(f"My name is John, I am {age}")
+print(f"My name is john, I am {age} years old")
+print(f"My name is John. I am {age: .2f}")
