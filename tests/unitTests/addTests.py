@@ -39,6 +39,14 @@ class AddTests(unittest.TestCase):
         cls.input()
         cls.output()
         cls.addInstance = Add(cls.firstNum, cls.secondNum)
+
+    def testNewFunction(self):
+        listOfInputs = [[2, 3], [3, 4]]
+        for eachList in listOfInputs:
+            self.firstNum = eachList[0]
+            self.secondNum = eachList[1]
+
+            self.testcheckAddTwoValue()
         
     def testcheckAddTwoValue(self):
         actualOutput = self.addInstance.addTwoValues()

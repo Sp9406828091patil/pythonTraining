@@ -8,5 +8,5 @@ class Add:
         return self.a + self.b
     
 
-a = Add(2, 3)
-print(a.addTwoValues())
+if __name__ == '__main__':
+    obj = Add(3, 3)
