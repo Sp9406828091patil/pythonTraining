@@ -115,24 +115,55 @@ import numpy as np
 # for i, each in enumerate(myList):
 #     print(i)
 
-arr1 = np.array([1, 2, 3])
-arr2 = np.array([4, 5, 6])
-arr = np.concatenate((arr1, arr2))
-print(arr)
-print(arr1 + arr2)
+# arr1 = np.array([1, 2, 3])
+# arr2 = np.array([4, 5, 6])
+# arr = np.concatenate((arr1, arr2))
+# print(arr)
+# print(arr1 + arr2)
 
-# arr1 = np.array([[1, 2], [3, 4]])
-# arr2 = np.array([[5, 6], [7, 8]])
-# arr = np.concatenate((arr1, arr2), axis=1)
+# # arr1 = np.array([[1, 2], [3, 4]])
+# # arr2 = np.array([[5, 6], [7, 8]])
+# # arr = np.concatenate((arr1, arr2), axis=1)
+# # print(arr)
+
+# arr = np.stack((arr1, arr2), axis=1)
+# print(arr)
+# arr = np.hstack((arr1, arr2))
+# print(arr)
+# arr = np.vstack((arr1, arr2))
 # print(arr)
 
-arr = np.stack((arr1, arr2), axis=1)
-print(arr)
-arr = np.hstack((arr1, arr2))
-print(arr)
-arr = np.vstack((arr1, arr2))
-print(arr)
+# arr = np.array([1, 2, 3, 4, 5, 6])
+# newarr = np.array_split(arr, 4)
+# print(newarr)
 
-arr = np.array([1, 2, 3, 4, 5, 6])
-newarr = np.array_split(arr, 4)
-print(newarr)
+
+# arr = np.array([1, 2, 3, 4, 5, 4, 4])
+# x = np.where(arr == 4)
+# x = np.where(arr > 4)
+# print(x)
+
+# arr = np.array([1, 2, 3, 4, 5, 6, 7, 8])
+# all_indices = np.arange(len(arr))
+# evenIdx = np.where(arr%2 == 0)[0]
+# oddIdx = np.setdiff1d(all_indices, evenIdx)
+# evenNumbers = arr[[evenIdx]]
+# oddNumbers = arr[[oddIdx]]
+# print(evenNumbers)
+# print(oddNumbers)
+
+# arr = np.array([1, 2, 3, 9, 5, 6, 7, 8])
+# sortedArr = np.sort(arr)
+# # Sort in descending order
+# sorted_arr = np.sort(arr)[::-1]
+# x = np.searchsorted(arr, 7)
+# print(x)
+# print(sortedArr)
+# print(sorted_arr)
+
+arr = np.array([1, 2, 3, 4])
+evenLogicalIdx = arr % 2 == 0
+# print(arr[evenLogicalIdx])
+# print(arr[~evenLogicalIdx])
+print(arr[[True, False, True, False]])
+print(arr[[1, 2]])
