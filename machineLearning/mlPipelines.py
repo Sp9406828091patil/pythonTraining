@@ -11,7 +11,7 @@ import joblib  # For saving and loading models
 
 # Step 2: Load and Prepare the Data
 # Load dataset (Titanic dataset as an example)
-df = pd.read_csv("https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv")
+df = pd.read_csv("data\Titanic-Dataset.csv")
 
 # Select relevant features
 features = ['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked']
