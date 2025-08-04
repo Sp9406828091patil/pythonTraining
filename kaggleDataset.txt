@@ -1,0 +1,5 @@
+Toronot Weather forecast
+https://www.kaggle.com/code/sumedh1507/toronto-weather-analysis
+
+Cosmetic EDA
+https://www.kaggle.com/code/str1k3rfl0/cosmetics-eda
